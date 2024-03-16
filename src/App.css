@@ -1,0 +1,404 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for the entire page */
+body {
+  --metal-tex: url(https://images.unsplash.com/photo-1501166222995-ff31c7e93cef?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTcyMDc2NzU&ixlib=rb-1.2.1&q=80);
+
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+
+/* Navigation bar */
+nav {
+  background-color: white;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  /* position: fixed; */
+  top: 0%;
+  left: 0%;
+
+}
+
+.title {
+  float: left;
+  position: relative;
+  /* margin: 15vh auto; */
+  color: transparent;
+  font-family: impact, sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.08em;
+  background-image: var(--metal-tex);
+  /* background-size: cover; */
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.texture,
+.texture::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.texture {
+  background-image: linear-gradient(to bottom, blue, white 50%, red 65%, white);
+  background-attachment: fixed;
+  mix-blend-mode: color-dodge;
+}
+
+.texture::after {
+  content: '';
+  background-image: var(--metal-tex);
+  background-size: cover;
+  filter: saturate(0) brightness(0.8) contrast(4);
+  mix-blend-mode: multiply;
+}
+
+/* nav element */
+nav a,
+nav i,
+.account {
+  color: black;
+  font-size: 1.1rem;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+nav i {
+  margin: 0px;
+  margin-right: 10px;
+}
+
+.account {
+  float: right;
+}
+
+/* hovering effect of element */
+.active {
+  background-color: rgb(123, 237, 123);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+/* for slider */
+.slider {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Banner section */
+.banner {
+  background-image: url('/public/Image/background.jpg');
+  /* background-size: cover; */
+  color: #fff;
+  text-align: center;
+  padding: 5rem 0;
+  min-height: 400px;
+}
+
+.banner h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.get-started-btn {
+  background-color: #ff6600;
+  border-radius: 10px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* for featured section */
+.featured {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 90%;
+  margin-left: 0.8rem;
+  max-height: 210px;
+  /* margin-bottom: 10rem; */
+}
+
+.featured-item {
+  text-align: center;
+  border: 1px solid black;
+  margin-right: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: rgb(229, 213, 213);
+  border-radius: 20px;
+  text-shadow: 10px red;
+}
+
+.featured-item h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.featured-item p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.view-btn {
+  background-color: green;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* for menu */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 10rem;
+  border: 2px solid black;
+  margin-left: 0.5rem;
+  max-width: 98vw;
+}
+
+.section {
+  margin-right: 20px;
+}
+
+.section h2 {
+  color: green;
+}
+
+.section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section ul li {
+  color: black;
+}
+
+
+/* for profile section */
+.profile_container {
+  max-width: 75vw;
+  margin: auto;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.profile_container h1 {
+  text-align: center;
+}
+
+.feature {
+  text-align: center;
+  display: inline-block;
+  width: 30%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  /* Border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0.5rem;
+}
+
+.feature img {
+  max-width: 100%;
+  height: auto;
+}
+
+.feature h2 {
+  color: #333;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  color: #666;
+}
+
+/* for profile */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 95vw;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.left-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.circle,.circle img {
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
+.circle{
+  display: flex;
+  gap: 10px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  
+}
+
+.circle img{
+  width: 170px;
+  height: 170px;
+}
+
+.priyashu{
+  position:absolute;
+  top: 0;
+}
+
+.pranav{
+  position:absolute;
+  bottom: 0;
+  right: 0;
+
+}
+
+.right-container {
+  flex: 2;
+  padding: 20px;
+  margin-left: 100px;
+}
+
+.quote {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 18px;
+}
+
+.author {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.strategy {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.button {
+  background-color:green;
+  justify-content:center;
+  margin-left:40%;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* for footer */
+/* for footer */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.left-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
+.right-container {
+  flex: 2;
+  padding: 20px;
+}
+
+.quote {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.author {
+  font-size: 14px;
+  color: #666;
+}
+
+.strategy {
+  text-align: center;
+}
+
+.button {
+  background-color:green;
+  justify-content:center;
+  margin-left:40%;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.mission {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.social-icons i {
+  font-size: 24px;
+  margin-right: 10px;
+}
