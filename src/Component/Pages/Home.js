@@ -1,8 +1,8 @@
 import React from 'react'
-import Slider from '../Slider'
-import Menu from '../Menu'
-import Feature from '../Feature'
-import Profile from '../Profile'
+import Slider from '../Home/Slider'
+import Menu from '../Home/Menu'
+import Feature from '../Home/Feature'
+import Profile from '../Home/Profile'
 
 const Home = () => {
   return (

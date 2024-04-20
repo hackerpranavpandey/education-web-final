@@ -1,10 +1,11 @@
 import React from 'react'
+import video from '../Courses/video'
 
 const Courses = () => {
   return (
-    <div>
-      Courses
-    </div>
+    <>
+      <video/>
+    </>
   )
 }
 
