@@ -395,9 +395,9 @@ nav i {
 .social-icons {
   display: flex;
   justify-content: flex-end;
-  margin-top: 20px;
-}
+  margin-top: 15px;
 
+}
 .social-icons i {
   font-size: 24px;
   margin-right: 10px;
