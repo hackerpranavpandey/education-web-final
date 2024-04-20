@@ -17,6 +17,7 @@ function Footer() {
         <i class='bx bxl-telegram'></i>
         <i class='bx bxl-youtube'></i>
         <i class='bx bxl-instagram'></i>
+        <i class ='bx bxl-whatsapp'></i>
       </div>
     </div>
   );
